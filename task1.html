@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1 in javascript</title>
+</head>
+
+<body>
+    <h2>Task one in java scrtipt</h2>
+    <script>
+        let arr=[]
+        function countvowels(string) {
+            const vowels = 'aeiouAEIOU'
+            let count = 0;
+            for (let i of string) {
+                for (let char of i) {
+                    if (vowels.includes(char)) {
+                        count++;
+                        console.log(char)
+                        arr.push(char)
+                        console.log(arr)
+                    }
+                }
+            }
+            return count;
+        }
+
+        let input = prompt("enter a string")
+        let k = countvowels(input)
+        console.log(input)
+        console.log(`the total count of vowel is ${k}`)
+
+    </script>
+</body>
+
+</html>
